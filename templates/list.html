@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Wall of text{% endblock %}
+{% block header %}
+  {% if "username" in session %}
+    Logged in as <b>{{session["username"]}}</b>
+  {% else %}
+    Not logged in
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% for item in list[::-1] %}
+      <div class="card">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="h2" >{{item.title}}</p>
+            <p class="h5">{{item.body}}</p>
+            <footer class="blockquote-footer">{{item.name}}</footer>
+          </blockquote>
+        </div>
+      </div>
+    {% endfor %}
+    {% if user in session %}
+        <p>Logged in as {{user}}</p>
+    {% endif %}
+{% endblock %}

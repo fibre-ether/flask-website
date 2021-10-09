@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block header %}Hello {{name}}{% endblock %}
+{% block content %}
+<div class = "container-fluid">
+    <form action="#" method="POST" class = "align-content-sm-center">
+        <p><input type="text" name="post-title" placeholder="Enter title"/></p>
+        <p>
+            <textarea id="textarea" rows="3" name="post-body" placeholder="Enter post"></textarea>
+        </p>
+        <p><input type="submit" value="submit" /></p>
+    </form>
+</div>
+
+<div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start"></div>
+    <a class="btn btn-primary btn-lg px-4" href="/">View posts</a>
+</div>
+{% endblock %}
+
+
+
