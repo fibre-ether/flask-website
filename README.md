@@ -1,2 +1,2 @@
 # flask-website
-A blog website made with flask hosted at (wall-of-text.herokuapp.com)
+A blog website made with flask hosted at [wall-of-text.herokuapp.com](wall-of-text.herokuapp.com)
